@@ -1,7 +1,169 @@
 <p>
+    <head>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
+    <script src="js/bootstrap-tab.js" type="text/javascript"></script>
+    <script src="js/bootstrap-carousel.js" type="text/javascript"></script>
+    <script src="js/bootstrap-transition.js" type="text/javascript"></script>
+    </head>
 <section id='body_content'>
+
   <%=raw @page.content_for(:body) %>
+    <table id="tripletable" >
+        <tr>
+            <td id="tableheader" style="text-align: center">Direction</td>
+            <td id="tableheader" style="text-align: center">Guidance</td>
+            <td id="tableheader" style="text-align: center">Support</td>
+        </tr>
+        <tr>
+            <td >
+                <ul>
+                    <li>Personal In-Depth College Counseling</li>
+                    <li>Comprehensive College Planning</li>
+                    <li><a href="college-planning" class="btn"> Learn More </a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Strategic Positioning and Preparation</li>
+                    <li>Structured and Simplified Process</li>
+                    <li><a href="programs-services" class="btn"> Learn More </a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Enthusiastic and Positive Advisors</li>
+                    <li>Over 25+ Years of Higher Education Experience</li>
+                    <li><a href="the-advisors" class="btn"> Learn More </a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+<div id="testimonials">
+    <p>
+        “I just wanted to say that I am immensely grateful for your help through this difficult process. You have helped solidify a future for me and that is simply priceless”.<br />
+        <i>-Andrew, University of Miami, Class of 2017 
+    </i></p>
+    <p>
+        “I GOT INTO UPENN!!!!!!! Thank you so much for all your help throughout the whole process!!! I couldn't have done it without you”! <br />
+        <i>
+        -Marykate, University of Pennsylvania, Class of 2016
+    </i></p>
+    <a href="testimonials" class="btn">Click Here To View More Testimonials</a>
+</div>
+
+
 </section>
 <section id='side_body_content'>
+            <div id="myCarousel" class="carousel slide">
+        <a id="title" href="track-record"> See Where We've Been </a>
+
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+    <div class="active item"><%= image_tag("ali.png") %>
+        <div class="carousel-caption">
+            <h4> Ali </h4>
+            <p>Quinnipiac University</p>
+        </div>
+    </div>
+    <div class="item"><%= image_tag("bubba.png") %>
+        <div class="carousel-caption">
+            <h4> Bubba </h4>
+            <p>Harvard University</p>
+        </div>
+    </div>
+    <div class="item"><%= image_tag("emmanuel.png") %>
+        <div class="carousel-caption">
+            <h4> Emmanual </h4>
+            <p>University of Massachussetts, Lowell</p>
+        </div>
+    </div>
+    <div class="item"><%= image_tag("julie.png") %>
+        <div class="carousel-caption">
+            <h4> Julie </h4>
+            <p>Arizona State University</p>
+        </div>
+    </div>
+    <div class="item"><%= image_tag("kathryn.png") %>
+        <div class="carousel-caption">
+            <h4> Kathryn </h4>
+            <p>University of Pennsylvannia</p>
+        </div>
+    </div>
+    <div class="item"><%= image_tag("katie.png") %>
+        <div class="carousel-caption">
+            <h4> Katie </h4>
+            <p>University of Southern California</p>
+        </div>
+    </div>
+    <div class="item"><%= image_tag("michelle.png") %>
+        <div class="carousel-caption">
+            <h4> Michelle </h4>
+            <p>American University</p>
+        </div>
+    </div>
+    <div class="item"><%= image_tag("nicole.png") %>
+        <div class="carousel-caption">
+            <h4> Nicole </h4>
+            <p>Rider University</p>
+        </div>
+    </div>
+    <div class="item"><%= image_tag("peter.png") %>
+        <div class="carousel-caption">
+            <h4> Peter </h4>
+            <p>Wake Forest University</p>
+        </div>
+    </div>
+    </div>
+    <!-- Carousel nav -->
+    </div>
+    
   <%=raw @page.content_for(:side_body) %>
+  <table id="marytable">
+    <div id="contactus">
+    <h3 style="font-size: 35px" > Contact   Us </h3>
+    </div>
+    <tr>
+        <td colspan="2" id="advisor_location"><i>West Coast</i></td>
+    </tr>
+    <tr>
+      <td colspan="2" id="names"><b>Dr. Mary K. Baker</b> </td>
+    </tr>
+    <tr>
+      <td><%= image_tag("phone.png") %></td>
+      <td>714.614.2801</td>
+    </tr>
+    <tr>
+      <td><%= image_tag("email.png") %></td>
+      <td>mary@collegequestadvising.com</td>
+    </tr>
+  </table><br />
+  <table id="reneetable">
+    <tr>
+        <td colspan="2" id="advisor_location"><i>East Coast</i></td>
+    </tr>
+    <tr>
+      <td colspan="2" id="names" ><b>Reneé L. Serrano, M. Ed.</b> </td>
+    </tr>
+    <tr>
+      <td><%= image_tag("phone.png") %></td>
+      <td>978.697.8767</td>
+    </tr>
+    <tr>
+      <td><%= image_tag("email.png") %></td>
+      <td>renee@collegequestadvising.com</td>
+    </tr>
+  </table>
+  <table id="images">
+    <tr><td id="neacacwacac">
+  <%= link_to image_tag("neacac.png"), "http://www.neacac.org" %>
+  <%= link_to image_tag("wacac.png"), "http://www.wacac.org" %></td></tr>
+</table>
 </section>
+<script charset="utf-8" type="text/javascript" >
+    $(function() {
+        $('#myCarousel').carousel({
+            interval: 4000
+        });
+    });    
+</script>

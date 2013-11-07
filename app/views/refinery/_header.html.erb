@@ -1,13 +1,19 @@
+<div id="logotitle" style="width: 100%">
+  <table width="100%"><tr><td width="25%" id="logoimage"><%= link_to image_tag("logo2.png"), root_path %></td>
+    <td width="75%" id="logotext"><%= link_to image_tag("bigboldtitle.png"), root_path %></td></tr>
+</table>
+  
+</div>
 <div class="container">
     <div class="navbar">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container" >
           <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
                  <span class="icon-bar">  </span>
                 </a>
-    <%= link_to Refinery::Core.site_name, refinery.root_path, :class => "brand" %>
+
 
     <%= render(:partial => "/refinery/menu", :locals => {
                  :dom_id => 'menu',

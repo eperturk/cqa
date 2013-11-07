@@ -9,12 +9,112 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
 
+ *= require_self
+ *= require_tree .
 
  */
 
 
+body{
+  margin-top: 0px;
+  padding-top: -50px;
+  padding-bottom: -40px;
+  margin-bottom: 0px;
+  margin-left: 60;
+  font-family: "Baskerville", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #A81227;
+  background-image: url('mooning.png');
+}
+
+#body_content_title{
+  color: #A81227;
+  margin-bottom: 10px;
+
+}
+
+.inner{
+  font-size: 20px;
+}
+
+
+}
+#page{
+
+}
+#body_content{
+
+  float: left;
+}
+
+#side_body_content{
+
+  float: right;
+}
+
+#logotext {
+  font-size: 45px;
+  text-align: left;
+  padding-left: 28px;
+}
+
+#logoimage{
+  text-align: center;
+  padding-left: 10px;
+}
+
+#subtext{
+  vertical-align: top;
+  text-align: left;
+  padding-left: 20px;
+}
+
+
+#logotitle{
+
+  padding-bottom: 15px;
+  padding-top: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: underline;
+}
 a{
-  padding-left: 0px;
+  padding-left: 10px;
+}
+#logotitle span{
+  font-size: 18px;
+  font-style: italic;
+  color: grey;
+ 
+}
+
+#page_container{
+  padding-top: 0px;
+  display: inline-block;
+  background-color: white;
+  margin-left: 135px;
+  margin-right: 120px;
+  box-shadow: 0px 0px 5px 3px  #888;
+  width: 960px;
+}
+}
+
+#page p{
+  padding-left: 8px;
+}
+
+#page h3{
+  padding-left: 8px;
+}
+
+
+
+footer{
+  width: ;
+
+  padding-left: 175px;
+  padding-right: 250px;
 }
 
 
@@ -35,18 +135,7 @@ a{
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 /* line 19, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_reset.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-  display: block;
-}
+
 
 /* line 28, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_reset.scss */
 audio,
@@ -260,14 +349,7 @@ textarea {
   }
 }
 /* line 9, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-body {
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333333;
-  background-color: white;
-}
+
 
 /* line 22, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
 a {
@@ -335,7 +417,7 @@ a:focus {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: 994px;
 }
 
 /* line 582, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
@@ -722,7 +804,7 @@ a:focus {
 
 /* line 9, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_type.scss */
 p {
-  margin: 0 0 10px;
+  margin: 20 20 20 10px;
 }
 
 /* line 12, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_type.scss */
@@ -825,7 +907,7 @@ a.text-success:focus {
 
 /* line 59, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
+  margin: 10px 20;
   font-family: inherit;
   font-weight: bold;
   line-height: 20px;
@@ -4341,10 +4423,16 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 20px;
   list-style: none;
 }
+.nav > li {
+  padding-left: 5px;
+  
+
+}
 
 /* line 16, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
 .nav > li > a {
   display: block;
+
 }
 
 /* line 20, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
@@ -4820,14 +4908,14 @@ input[type="submit"].btn.btn-mini {
 /* line 21, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-inner {
   min-height: 40px;
-  padding-left: 10px;
+  padding-left: 10px; 
   padding-right: 10px;
-  background-color: #f9f9f9;
-  background-image: -moz-linear-gradient(top, white, #f2f2f2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#f2f2f2));
-  background-image: -webkit-linear-gradient(top, white, #f2f2f2);
-  background-image: -o-linear-gradient(top, white, #f2f2f2);
-  background-image: linear-gradient(to bottom, white, #f2f2f2);
+  background-color: #981022;
+  background-image: -moz-linear-gradient(top, #981022, #981022);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#981022), to(#981022));
+  background-image: -webkit-linear-gradient(top, #981022, #981022);
+  background-image: -o-linear-gradient(top, #981022, #981022);
+  background-image: linear-gradient(to bottom, #981022, #981022);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF2F2F2', GradientType=0);
   border: 1px solid #d4d4d4;
@@ -4869,8 +4957,8 @@ input[type="submit"].btn.btn-mini {
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
-  color: #777777;
-  text-shadow: 0 1px 0 white;
+  color: white;
+
 }
 /* line 60, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar .brand:hover, .navbar .brand:focus {
@@ -4881,16 +4969,17 @@ input[type="submit"].btn.btn-mini {
 .navbar-text {
   margin-bottom: 0;
   line-height: 40px;
-  color: #777777;
+  color: white;
+
 }
 
 /* line 75, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-link {
-  color: #777777;
+  color: white;
 }
 /* line 78, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-link:hover, .navbar-link:focus {
-  color: #333333;
+  color: #b4b4b4;
 }
 
 /* line 85, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
@@ -5080,10 +5169,10 @@ input[type="submit"].btn.btn-mini {
 /* line 242, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar .nav > li > a {
   float: none;
-  padding: 10px 4px 10px;
-  color: #777777;
+  padding: 10px 4px 15px;
+  color: white;
   text-decoration: none;
-  text-shadow: 0 1px 0 white;
+
 }
 
 /* line 250, ../../../../../.rvm/gems/ruby-1.8.7-p371@cqa/gems/bootstrap-sass-2.3.1.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
@@ -5095,7 +5184,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
   background-color: transparent;
-  color: #333333;
+  color: #b4b4b4 ;
   text-decoration: none;
 }
 
@@ -5120,12 +5209,12 @@ input[type="submit"].btn.btn-mini {
   margin-right: 5px;
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #ededed;
-  background-image: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background-image: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
+  background-color: #981022;
+  background-image: -moz-linear-gradient(top, #981022, #981022);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#981022), to(#981022));
+  background-image: -webkit-linear-gradient(top, #981022, #981022);
+  background-image: -o-linear-gradient(top, #981022, #981022);
+  background-image: linear-gradient(to bottom, #981022, #981022);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF2F2F2', endColorstr='#FFE6E6E6', GradientType=0);
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
@@ -6814,7 +6903,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 30px;
+  min-height: 0px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -6822,7 +6911,8 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 
 /* line 3, ../../app/assets/stylesheets/application.css.scss */
 body {
-  padding-top: 40px;
+  height: 100%;
+  background-image: url('mooning.png');
 }
 
 /* line 7, ../../app/assets/stylesheets/application.css.scss */
